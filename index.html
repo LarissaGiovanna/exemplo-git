@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+</head>
+
+<body>
+    <style>
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            background-color: red;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+    <div>
+        <h1 onclick="change()" id="btn">Hello World</h1>
+    </div>
+    <p>v. 1.0</p>
+    <script>
+        function change() {
+            let btn = document.getElementById('btn')
+                btn.style.background = 'blue'
+        }
+    </script>
+</body>
+
+</html>
