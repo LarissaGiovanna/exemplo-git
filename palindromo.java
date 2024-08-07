@@ -11,9 +11,9 @@ public class palindromo {
         }
 
         if(palavra.equals(inverso)){
-            System.out.println("A palavra é um palindromo");
+            System.out.println("A palavra '"+palavra+"' é um palindromo");
         }else{
-            System.out.println("A palavra digitada não é um palindromo.");
+            System.out.println("A palavra '"+palavra+"' não é um palindromo.");
         }
     }
 }
