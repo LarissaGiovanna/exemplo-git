@@ -1,11 +1,11 @@
 import java.util.*;
-public class palindromo {
+public class palindromoPalavra {
     public static void main(String[] args) {
         String palavra, inverso = "";
         System.out.println("Digite a palavra:");
-        Scanner s = new Scanner(System.in);
-        palavra = s.next();
-        
+        try (Scanner s = new Scanner(System.in)) {
+            palavra = s.next();
+        }
         for (int i = palavra.length() - 1; i >= 0; i--) {
             inverso = inverso+palavra.charAt(i);
         }
